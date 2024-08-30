@@ -14,7 +14,8 @@ add Department varchar(50)
 
 --Remove the "Salary" column from the "Employees" table.
 
-exec sp_rename 'Employees.Salary' , 'Salary_amount' 
+alter table Employees
+DROP COLUMN Employees.Salary
 
 --	Rename the "Department" column in the "Employees" table to "DeptName".
 
